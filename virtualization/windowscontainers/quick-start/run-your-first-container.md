@@ -43,7 +43,7 @@ For this simple example, a ‘Hello World’ container image will be created and
 1. Start a container with an interactive session from the `nanoserver` image by entering the following command in your command prompt window:
 
    ```console
-   docker run -it mcr.microsoft.com/windows/nanoserver:ltsc2022 cmd.exe
+   docker run -it --user ContainerAdministrator mcr.microsoft.com/windows/nanoserver:ltsc2022 cmd.exe
    ```
 2. After the container is started, the command prompt window changes context to the container. Inside the container, we'll create a simple ‘Hello World’ text file and then exit the container by entering the following commands:
 
